@@ -19,7 +19,7 @@ public class KnotenEntfernung {
 
             if (dist == n) {
                 result.add(current);
-                // keine weiteren Nachbarn hinzufügen, da nur genau n Schritte
+
                 continue;
             } else if (dist > n) {
                 continue;
@@ -56,13 +56,13 @@ public class KnotenEntfernung {
             }
             reader.close();
 
-            // Stationen laden
+
             StationMapper mapper = new StationMapper("https://progwebtec.github.io/classes/ss2025/info2/labs/assignment-09/stations.txt");
 
-            // Startknoten Schöneweide (ID)
+
             String start = "060192001006";
 
-            // Ausgabe Knoten in Entfernung 1 bis 3
+
             for (int n = 1; n <= 30; n++) {
                 Set<String> nodesAtDistance = getVerticesAtDistanceN(graph, start, n);
                 System.out.println("Knoten in Entfernung " + n + ":");

@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class WeightedGraph {
-    // Adjazenzliste: Knoten -> Liste von Nachbarn (mit Gewicht)
+
     private Map<String, List<Edge>> adjList = new HashMap<>();
 
     public void addNode(String name) {

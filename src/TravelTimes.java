@@ -24,7 +24,6 @@ public class TravelTimes {
             }
             reader.close();
 
-            // Stationen laden
             StationMapper mapper = new StationMapper("https://progwebtec.github.io/classes/ss2025/info2/labs/assignment-09/stations.txt");
 
             String startId = "060192001006"; // S Schöneweide
